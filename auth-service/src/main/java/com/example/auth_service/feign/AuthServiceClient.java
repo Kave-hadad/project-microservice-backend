@@ -1,0 +1,41 @@
+package com.example.auth_service.feign;
+
+import java.util.List;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PatchMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.example.auth_service.dto.UserProfileDTO;
+
+@FeignClient(name = "userservice", url = "${user-service.url}" )
+//@FeignClient(name = "userservice", url = "${user-service.url}" , configuration = FeignAuthConfig.class)
+public interface AuthServiceClient {
+
+	
+	
+	  @GetMapping("/search")
+	  ResponseEntity <List<UserProfileDTO>> getUserByFamily(@RequestParam String family);
+	  @GetMapping
+	  ResponseEntity< List<UserProfileDTO>> getAllUsersProfiles();
+	  @PostMapping
+	  ResponseEntity<UserProfileDTO> createUserProfile(@RequestBody UserProfileDTO userProfileDto);
+	  @GetMapping("/{id}")
+	  ResponseEntity<UserProfileDTO> getUserByAuthUserId(@PathVariable("id") Long authUserId);
+      @DeleteMapping("/{id}")
+      ResponseEntity<Void> deleteUser(@PathVariable("id") Long authUserId);
+      @PatchMapping
+ 	  ResponseEntity<UserProfileDTO> patchUser(@RequestBody UserProfileDTO updates);
+      
+      
+  	
+
+      
+      
+}

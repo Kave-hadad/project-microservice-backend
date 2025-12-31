@@ -1,0 +1,1403 @@
+2025-12-07 00:13:06 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 21 class path changes (0 additions, 21 deletions, 0 modifications)
+2025-12-07 00:13:06 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-07 00:13:06 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-07 00:13:06 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 00:13:06 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-12-07 00:13:06 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-07 00:13:06 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-07 00:13:07 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 1268 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-07 00:13:07 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 00:13:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 00:13:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interface.
+2025-12-07 00:13:08 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-07 00:13:08 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 00:13:08 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-07 00:13:08 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-07 00:13:08 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1365 ms
+2025-12-07 00:13:08 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-07 00:13:08 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-07 00:13:08 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-07 00:13:08 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-07 00:13:08 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-07 00:13:08 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-07 00:13:08 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-07 00:13:08 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-07 00:13:09 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-07 00:13:09 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 00:16:04 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 11608 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-07 00:16:04 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 00:16:04 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-07 00:16:04 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-07 00:16:06 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 00:16:06 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 81 ms. Found 1 JPA repository interface.
+2025-12-07 00:16:09 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-07 00:16:09 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 00:16:09 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-07 00:16:09 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-07 00:16:09 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4833 ms
+2025-12-07 00:16:09 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-07 00:16:10 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-07 00:16:10 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-07 00:16:10 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-07 00:16:10 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-07 00:16:10 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-07 00:16:11 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-07 00:16:11 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-07 00:16:11 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-07 00:16:14 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-07 00:16:14 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 00:16:16 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-07 00:16:19 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-07 00:16:20 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: eccf5ede-d7b5-463b-9737-3c659263bbe1
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-07 00:16:20 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-07 00:16:21 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-07 00:16:21 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-07 00:16:21 INFO  c.e.u.UserserviceApplication - Started UserserviceApplication in 17.784 seconds (process running for 18.52)
+2025-12-07 00:16:44 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-07 00:16:44 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-07 00:16:44 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-12-07 00:17:21 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 19 class path changes (0 additions, 0 deletions, 19 modifications)
+2025-12-07 00:17:21 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-07 00:17:21 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-07 00:17:21 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 00:17:21 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-12-07 00:17:21 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-07 00:17:21 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-07 00:17:22 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 11608 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-07 00:17:22 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 00:17:46 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 6480 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-07 00:17:46 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 00:17:46 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-07 00:17:46 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-07 00:17:50 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 00:17:51 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 421 ms. Found 1 JPA repository interface.
+2025-12-07 00:17:54 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-07 00:17:55 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 00:17:55 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-07 00:17:55 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-07 00:17:55 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 8305 ms
+2025-12-07 00:17:55 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-07 00:17:56 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-07 00:17:56 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-07 00:17:56 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-07 00:17:56 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-07 00:17:56 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-07 00:17:57 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-07 00:17:57 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-07 00:17:57 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-07 00:18:00 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-07 00:18:00 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 00:18:02 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-07 00:18:02 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-07 00:18:03 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 096c6d9c-5f68-4cb1-be71-de28e4137428
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-07 00:18:03 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-07 00:18:03 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-07 00:18:03 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-07 00:18:03 INFO  c.e.u.UserserviceApplication - Started UserserviceApplication in 19.512 seconds (process running for 20.745)
+2025-12-07 00:18:17 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-07 00:18:17 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-07 00:18:17 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-12-07 11:27:07 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 588 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-07 11:27:07 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 11:27:07 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-07 11:27:07 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-07 11:27:15 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 11:27:15 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 598 ms. Found 1 JPA repository interface.
+2025-12-07 11:27:24 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-07 11:27:25 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 11:27:25 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-07 11:27:25 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-07 11:27:25 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 18050 ms
+2025-12-07 11:27:28 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-07 11:27:29 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-07 11:27:29 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-07 11:27:30 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-07 11:27:30 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-07 11:27:30 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-07 11:27:31 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-07 11:27:31 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-07 11:27:31 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-07 11:27:33 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-07 11:27:34 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 11:27:37 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-07 11:27:40 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-07 11:27:40 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: a14d9075-3539-4533-a48a-574c28ad37d3
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-07 11:27:40 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-07 11:27:41 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-07 11:27:41 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-07 11:27:41 INFO  c.e.u.UserserviceApplication - Started UserserviceApplication in 36.454 seconds (process running for 43.126)
+2025-12-07 11:28:02 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-07 11:28:02 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-07 11:28:02 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 19 ms
+2025-12-07 11:34:18 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 3620 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-07 11:34:18 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 11:34:18 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-07 11:34:18 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-07 11:34:22 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 11:34:22 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 168 ms. Found 1 JPA repository interface.
+2025-12-07 11:34:26 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-07 11:34:26 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 11:34:26 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-07 11:34:27 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-07 11:34:27 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 8465 ms
+2025-12-07 11:34:28 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-07 11:34:29 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-07 11:34:29 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-07 11:34:29 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-07 11:34:29 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-07 11:34:29 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-07 11:34:30 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-07 11:34:30 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-07 11:34:30 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-07 11:34:31 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-07 11:34:32 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 11:34:34 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-07 11:34:36 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-07 11:34:36 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 564c187b-7ba8-4142-9278-3b91f3cff474
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-07 11:34:36 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-07 11:34:36 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-07 11:34:36 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-07 11:34:36 INFO  c.e.u.UserserviceApplication - Started UserserviceApplication in 21.068 seconds (process running for 26.705)
+2025-12-07 11:34:52 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-07 11:34:52 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-07 11:34:52 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2025-12-07 11:38:26 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 11144 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-07 11:38:26 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 11:38:27 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-07 11:38:27 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-07 11:38:30 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 11:38:30 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 124 ms. Found 1 JPA repository interface.
+2025-12-07 11:38:33 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-07 11:38:33 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 11:38:33 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-07 11:38:33 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-07 11:38:33 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6752 ms
+2025-12-07 11:38:34 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-07 11:38:34 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-07 11:38:34 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-07 11:38:34 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-07 11:38:35 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-07 11:38:35 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-07 11:38:36 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-07 11:38:36 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-07 11:38:36 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-07 11:38:38 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-07 11:38:38 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 11:38:41 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-07 11:38:42 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-07 11:38:42 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 2cbb4989-fa24-48ae-90c9-50ed52b745ac
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-07 11:38:42 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-07 11:38:43 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-07 11:38:43 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-07 11:38:43 INFO  c.e.u.UserserviceApplication - Started UserserviceApplication in 17.928 seconds (process running for 18.803)
+2025-12-07 11:49:57 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 12880 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-07 11:49:57 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 11:49:57 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-07 11:49:57 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-07 11:50:01 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 11:50:02 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 530 ms. Found 1 JPA repository interface.
+2025-12-07 11:50:04 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-07 11:50:04 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 11:50:04 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-07 11:50:04 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-07 11:50:04 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7055 ms
+2025-12-07 11:50:05 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-07 11:50:05 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-07 11:50:05 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-07 11:50:05 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-07 11:50:05 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-07 11:50:05 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-07 11:50:07 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-07 11:50:07 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-07 11:50:07 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-07 11:50:09 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-07 11:50:10 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 11:50:11 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-07 11:50:12 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-07 11:50:12 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 36701737-b2b9-4b2b-868b-d7f22383f04f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-07 11:50:12 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-07 11:50:12 WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2025-12-07 11:50:12 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-12-07 11:50:12 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 11:50:12 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-12-07 11:50:12 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-07 11:50:12 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-07 11:50:12 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-07 11:50:12 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8082 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8082 or configure this application to listen on another port.
+
+2025-12-07 12:26:05 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 3448 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-07 12:26:05 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 12:26:05 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-07 12:26:05 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-07 12:26:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 12:26:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 157 ms. Found 1 JPA repository interface.
+2025-12-07 12:26:13 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-07 12:26:13 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 12:26:13 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-07 12:26:13 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-07 12:26:13 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 8190 ms
+2025-12-07 12:26:15 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-07 12:26:15 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-07 12:26:15 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-07 12:26:15 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-07 12:26:16 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-07 12:26:16 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-07 12:26:16 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-07 12:26:16 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-07 12:26:16 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-07 12:26:18 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-07 12:26:18 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 12:26:20 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-07 12:26:22 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-07 12:26:22 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: efeec42b-9a39-43d6-9ef6-c09359ca9e51
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-07 12:26:23 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-07 12:26:23 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-07 12:26:23 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-07 12:26:23 INFO  c.e.u.UserserviceApplication - Started UserserviceApplication in 20.998 seconds (process running for 27.506)
+2025-12-07 12:26:25 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-07 12:26:25 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-07 12:26:25 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-12-07 12:26:59 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 20 class path changes (0 additions, 20 deletions, 0 modifications)
+2025-12-07 12:26:59 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-07 12:26:59 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-07 12:26:59 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 12:26:59 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-12-07 12:26:59 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-07 12:26:59 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-07 12:27:00 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 3448 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-07 12:27:00 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 12:27:01 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 12:27:01 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interface.
+2025-12-07 12:27:01 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-07 12:27:01 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 12:27:01 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-07 12:27:01 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-07 12:27:01 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1273 ms
+2025-12-07 12:27:01 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-07 12:27:01 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-07 12:27:01 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-07 12:27:01 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-07 12:27:01 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-07 12:27:01 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-07 12:27:01 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-07 12:27:01 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-07 12:27:02 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-07 12:27:02 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 12:27:02 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-07 12:27:02 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-07 12:27:02 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: a8b27b34-d87c-4fbc-9dd9-4c2abf9232c9
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-07 12:27:02 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-07 12:27:02 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-07 12:27:02 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-07 12:27:02 INFO  c.e.u.UserserviceApplication - Started UserserviceApplication in 2.785 seconds (process running for 66.416)
+2025-12-07 12:27:02 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-12-07 12:27:04 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 20 class path changes (20 additions, 0 deletions, 0 modifications)
+2025-12-07 12:27:04 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-07 12:27:04 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-07 12:27:04 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 12:27:04 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-12-07 12:27:04 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-07 12:27:04 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-07 12:27:04 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 3448 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-07 12:27:04 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 12:27:04 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 12:27:04 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interface.
+2025-12-07 12:27:04 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-07 12:27:04 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 12:27:04 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-07 12:27:04 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-07 12:27:04 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 650 ms
+2025-12-07 12:27:05 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2025-12-07 12:27:05 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-07 12:27:05 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2025-12-07 12:27:05 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-07 12:27:05 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-07 12:27:05 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-07 12:27:05 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-07 12:27:05 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-07 12:27:05 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-07 12:27:05 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 12:27:05 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-07 12:27:05 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-07 12:27:05 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 08994c40-b3d0-4543-b5dc-0756a643097c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-07 12:27:05 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-07 12:27:05 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-07 12:27:05 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-07 12:27:05 INFO  c.e.u.UserserviceApplication - Started UserserviceApplication in 1.432 seconds (process running for 69.348)
+2025-12-07 12:27:05 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-12-07 12:27:39 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-07 12:27:39 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-07 12:27:39 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-12-07 12:30:34 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 1512 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-07 12:30:34 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 12:30:34 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-07 12:30:34 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-07 12:30:39 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 12:30:39 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 161 ms. Found 1 JPA repository interface.
+2025-12-07 12:30:41 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-07 12:30:41 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 12:30:41 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-07 12:30:42 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-07 12:30:42 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7413 ms
+2025-12-07 12:30:42 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-07 12:30:43 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-07 12:30:43 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-07 12:30:44 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-07 12:30:44 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-07 12:30:44 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-07 12:30:45 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-07 12:30:46 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-07 12:30:46 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-07 12:30:48 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-07 12:30:48 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 12:30:49 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-07 12:30:50 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-07 12:30:50 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 181e9355-a8af-4e32-b4af-b2f7872ba1b8
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-07 12:30:50 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-07 12:30:50 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-07 12:30:50 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-07 12:30:50 INFO  c.e.u.UserserviceApplication - Started UserserviceApplication in 18.19 seconds (process running for 21.14)
+2025-12-07 12:30:59 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-07 12:30:59 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-07 12:30:59 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-12-07 12:34:09 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 2384 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-07 12:34:09 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 12:34:10 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-07 12:34:10 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-07 12:34:13 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 12:34:13 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 143 ms. Found 1 JPA repository interface.
+2025-12-07 12:34:17 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-07 12:34:17 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 12:34:17 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-07 12:34:18 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-07 12:34:18 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7945 ms
+2025-12-07 12:34:18 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-07 12:34:19 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-07 12:34:19 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-07 12:34:19 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-07 12:34:19 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-07 12:34:19 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-07 12:34:20 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-07 12:34:20 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-07 12:34:20 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-07 12:34:23 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-07 12:34:24 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 12:34:26 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-07 12:34:27 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-07 12:34:27 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: eaa55ff2-957e-453a-9c0f-a8426f3aa252
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-07 12:34:27 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-07 12:34:27 WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2025-12-07 12:34:27 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-12-07 12:34:27 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 12:34:27 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-12-07 12:34:27 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-07 12:34:27 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-07 12:34:28 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-07 12:34:28 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8082 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8082 or configure this application to listen on another port.
+
+2025-12-07 12:39:23 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 12548 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-07 12:39:23 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 12:39:23 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-07 12:39:23 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-07 12:39:26 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 12:39:27 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 310 ms. Found 1 JPA repository interface.
+2025-12-07 12:39:31 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-07 12:39:31 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 12:39:31 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-07 12:39:31 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-07 12:39:31 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 8223 ms
+2025-12-07 12:39:32 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-07 12:39:33 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-07 12:39:33 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-07 12:39:33 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-07 12:39:33 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-07 12:39:33 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-07 12:39:34 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-07 12:39:34 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-07 12:39:34 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-07 12:39:36 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-07 12:39:36 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 12:39:39 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-07 12:39:40 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-07 12:39:41 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 7cda5650-ab08-4fb1-8f46-501c7717d666
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-07 12:39:41 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-07 12:39:41 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-07 12:39:41 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-07 12:39:41 INFO  c.e.u.UserserviceApplication - Started UserserviceApplication in 21.237 seconds (process running for 22.552)
+2025-12-07 12:39:48 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-07 12:39:48 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-07 12:39:48 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-12-07 12:43:51 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-12-07 12:43:51 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-07 12:43:51 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-07 12:43:51 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 12:43:51 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-12-07 12:43:51 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-07 12:43:51 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-07 12:43:51 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 12548 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-07 12:43:51 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 12:43:52 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 12:43:52 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interface.
+2025-12-07 12:43:52 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-07 12:43:52 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 12:43:52 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-07 12:43:52 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-07 12:43:52 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 847 ms
+2025-12-07 12:43:52 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-07 12:43:52 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-07 12:43:52 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-07 12:43:52 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-07 12:43:52 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-07 12:43:52 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-07 12:43:52 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-07 12:43:52 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-07 12:43:52 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-07 12:43:52 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 12:43:53 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-07 12:43:53 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-07 12:43:53 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 47cb7fac-1592-40ac-b56a-d433b4fd3937
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-07 12:43:53 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-07 12:43:53 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-07 12:43:53 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-07 12:43:53 INFO  c.e.u.UserserviceApplication - Started UserserviceApplication in 2.146 seconds (process running for 274.663)
+2025-12-07 12:43:53 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-12-07 12:44:16 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 3000 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-07 12:44:17 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 12:44:17 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-07 12:44:17 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-07 12:44:19 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 12:44:19 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 108 ms. Found 1 JPA repository interface.
+2025-12-07 12:44:23 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-07 12:44:23 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 12:44:23 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-07 12:44:23 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-07 12:44:23 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6665 ms
+2025-12-07 12:44:24 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-07 12:44:25 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-07 12:44:25 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-07 12:44:25 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-07 12:44:26 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-07 12:44:26 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-07 12:44:27 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-07 12:44:27 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-07 12:44:27 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-07 12:44:30 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-07 12:44:30 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 12:44:32 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-07 12:44:33 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-07 12:44:33 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: a8d026ec-58cc-45f6-a385-3f32e5262a3d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-07 12:44:33 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-07 12:44:34 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-07 12:44:34 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-07 12:44:34 INFO  c.e.u.UserserviceApplication - Started UserserviceApplication in 19.483 seconds (process running for 20.328)
+2025-12-07 12:44:49 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-07 12:44:49 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-07 12:44:49 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-12-07 13:47:03 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 9208 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-07 13:47:03 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 13:47:03 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-07 13:47:03 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-07 13:47:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 13:47:10 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 271 ms. Found 1 JPA repository interface.
+2025-12-07 13:47:14 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-07 13:47:14 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 13:47:14 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-07 13:47:15 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-07 13:47:15 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 11954 ms
+2025-12-07 13:47:17 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-07 13:47:18 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-07 13:47:18 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-07 13:47:18 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-07 13:47:19 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-07 13:47:19 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-07 13:47:20 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-07 13:47:20 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-07 13:47:21 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-07 13:47:23 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-07 13:47:23 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 13:47:26 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-07 13:47:27 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-07 13:47:28 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 537b77dd-cc55-4cfe-a25b-ce073446f88d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-07 13:47:28 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-07 13:47:29 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-07 13:47:30 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-07 13:47:30 INFO  c.e.u.UserserviceApplication - Started UserserviceApplication in 30.917 seconds (process running for 40.548)
+2025-12-07 13:47:55 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-07 13:47:55 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-07 13:47:55 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2025-12-07 14:00:02 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 15256 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-07 14:00:02 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 14:00:02 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-07 14:00:02 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-07 14:00:07 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 14:00:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 206 ms. Found 1 JPA repository interface.
+2025-12-07 14:00:11 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-07 14:00:11 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 14:00:11 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-07 14:00:12 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-07 14:00:12 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 9525 ms
+2025-12-07 14:00:14 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-07 14:00:15 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-07 14:00:15 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-07 14:00:15 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-07 14:00:16 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-07 14:00:16 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-07 14:00:17 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-07 14:00:18 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-07 14:00:18 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-07 14:00:21 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-07 14:00:21 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 14:00:23 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-07 14:00:25 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-07 14:00:26 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 489971b9-4447-4f48-a8ef-5a0f7742ab57
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-07 14:00:26 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-07 14:00:27 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-07 14:00:27 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-07 14:00:27 INFO  c.e.u.UserserviceApplication - Started UserserviceApplication in 27.564 seconds (process running for 29.599)
+2025-12-07 14:00:42 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-07 14:00:42 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-07 14:00:42 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-12-07 14:26:45 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 11860 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-07 14:26:45 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 14:26:46 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-07 14:26:46 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-07 14:26:50 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 14:26:50 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 153 ms. Found 1 JPA repository interface.
+2025-12-07 14:26:52 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-07 14:26:52 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 14:26:52 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-07 14:26:52 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-07 14:26:52 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6587 ms
+2025-12-07 14:26:53 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-07 14:26:53 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-07 14:26:53 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-07 14:26:54 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-07 14:26:54 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-07 14:26:54 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-07 14:26:55 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-07 14:26:55 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-07 14:26:56 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-07 14:26:58 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-07 14:26:58 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 14:26:59 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-07 14:27:00 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-07 14:27:00 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 4763b3b1-6406-42ec-9c1b-c84bc176fd12
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-07 14:27:00 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-07 14:27:00 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-07 14:27:00 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-07 14:27:00 INFO  c.e.u.UserserviceApplication - Started UserserviceApplication in 16.983 seconds (process running for 19.653)
+2025-12-07 14:27:06 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-07 14:27:06 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-07 14:27:06 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-12-07 14:29:20 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-12-07 14:29:20 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-07 14:29:20 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-07 14:29:20 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 14:29:20 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-12-07 14:29:20 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-07 14:29:20 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-07 14:29:20 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 11860 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-07 14:29:20 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 14:29:21 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 14:29:21 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interface.
+2025-12-07 14:29:22 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-07 14:29:22 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 14:29:22 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-07 14:29:22 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-07 14:29:22 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1274 ms
+2025-12-07 14:36:42 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 2076 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-07 14:36:42 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 14:36:43 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-07 14:36:43 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-07 14:36:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 14:36:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 78 ms. Found 1 JPA repository interface.
+2025-12-07 14:36:47 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-07 14:36:47 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 14:36:47 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-07 14:36:47 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-07 14:36:47 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4317 ms
+2025-12-07 14:36:47 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-07 14:36:48 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-07 14:36:48 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-07 14:36:48 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-07 14:36:48 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-07 14:36:48 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-07 14:36:49 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-07 14:36:49 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-07 14:36:49 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-07 14:37:49 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 9916 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-07 14:37:49 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 14:37:49 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-07 14:37:49 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-07 14:37:52 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 14:37:53 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 290 ms. Found 1 JPA repository interface.
+2025-12-07 14:37:55 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-07 14:37:55 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 14:37:55 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-07 14:37:56 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-07 14:37:56 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6288 ms
+2025-12-07 14:37:57 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-07 14:37:57 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-07 14:37:57 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-07 14:37:57 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-07 14:37:58 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-07 14:37:58 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-07 14:37:58 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-07 14:37:58 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-07 14:37:58 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-07 14:37:59 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-07 14:37:59 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 14:38:00 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-07 14:38:01 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-07 14:38:01 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 168bf405-7043-4c19-985d-da0ffe91186a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-07 14:38:01 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-07 14:38:01 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-07 14:38:01 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-07 14:38:01 INFO  c.e.u.UserserviceApplication - Started UserserviceApplication in 14.36 seconds (process running for 16.5)
+2025-12-07 14:38:11 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-07 14:38:11 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-07 14:38:11 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2025-12-07 14:48:46 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-12-07 14:48:46 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-07 14:48:46 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-07 14:48:46 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 14:48:46 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-12-07 14:48:46 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-07 14:48:46 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-07 14:48:46 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 9916 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-07 14:48:46 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 14:48:47 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 14:48:47 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interface.
+2025-12-07 14:48:47 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-07 14:48:47 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 14:48:47 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-07 14:48:47 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-07 14:48:47 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 918 ms
+2025-12-07 14:48:47 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-07 14:48:47 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-07 14:48:47 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-07 14:48:47 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-07 14:48:47 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-07 14:48:47 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-07 14:48:47 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-07 14:48:47 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-07 14:48:47 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-07 14:48:47 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 14:48:48 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-07 14:48:48 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-07 14:48:48 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 401e1afc-dda6-48d0-b343-db82f25c441a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-07 14:48:48 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-07 14:48:48 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-07 14:48:48 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-07 14:48:48 INFO  c.e.u.UserserviceApplication - Started UserserviceApplication in 1.92 seconds (process running for 662.849)
+2025-12-07 14:48:48 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-12-07 14:49:00 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-07 14:49:00 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-07 14:49:00 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-12-07 14:51:07 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 10940 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-07 14:51:07 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 14:51:07 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-07 14:51:07 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-07 14:51:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 14:51:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 102 ms. Found 1 JPA repository interface.
+2025-12-07 14:51:11 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-07 14:51:11 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 14:51:11 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-07 14:51:11 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-07 14:51:11 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4541 ms
+2025-12-07 14:51:12 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-07 14:51:12 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-07 14:51:12 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-07 14:51:12 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-07 14:51:13 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-07 14:51:13 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-07 14:51:13 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-07 14:51:13 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-07 14:51:14 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-07 14:51:16 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-07 14:51:17 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 14:51:18 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-07 14:51:20 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-07 14:51:21 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 71ac553a-ff0e-41be-8192-b30be0f1c680
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-07 14:51:21 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-07 14:51:22 WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2025-12-07 14:51:22 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-12-07 14:51:22 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 14:51:22 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-12-07 14:51:22 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-07 14:51:22 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-07 14:51:22 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-07 14:51:22 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8082 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8082 or configure this application to listen on another port.
+
+2025-12-07 14:52:57 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 10744 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-07 14:52:57 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 14:52:57 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-07 14:52:57 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-07 14:53:01 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 14:53:02 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 282 ms. Found 1 JPA repository interface.
+2025-12-07 14:53:04 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-07 14:53:04 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 14:53:04 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-07 14:53:04 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-07 14:53:04 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6978 ms
+2025-12-07 14:53:05 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-07 14:53:05 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-07 14:53:05 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-07 14:53:06 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-07 14:53:06 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-07 14:53:06 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-07 14:53:06 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-07 14:53:07 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-07 14:53:07 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-07 14:53:09 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-07 14:53:10 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 14:53:11 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-07 14:53:12 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-07 14:53:12 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 8ae75e24-4aa9-470b-a926-db32e48bb4c8
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-07 14:53:12 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-07 14:53:13 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-07 14:53:13 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-07 14:53:13 INFO  c.e.u.UserserviceApplication - Started UserserviceApplication in 18.194 seconds (process running for 20.104)
+2025-12-07 14:53:23 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-07 14:53:23 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-07 14:53:23 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+2025-12-07 17:00:13 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 10052 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-07 17:00:13 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 17:00:13 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-07 17:00:13 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-07 17:00:21 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 17:00:21 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 189 ms. Found 1 JPA repository interface.
+2025-12-07 17:00:25 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-07 17:00:26 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 17:00:26 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-07 17:00:26 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-07 17:00:26 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 12849 ms
+2025-12-07 17:00:28 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-07 17:00:29 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-07 17:00:29 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-07 17:00:29 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-07 17:00:29 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-07 17:00:30 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-07 17:00:32 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-07 17:00:32 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-07 17:00:32 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-07 17:00:34 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-07 17:00:34 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 17:00:36 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-07 17:00:38 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-07 17:00:39 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 3271fae2-4420-41ad-a28e-d8b529fd0704
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-07 17:00:39 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-07 17:00:39 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-07 17:00:40 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-07 17:00:40 INFO  c.e.u.UserserviceApplication - Started UserserviceApplication in 30.578 seconds (process running for 38.426)
+2025-12-07 17:00:46 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-07 17:00:46 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-07 17:00:46 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2025-12-07 17:22:56 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 5520 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-07 17:22:56 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 17:22:56 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-07 17:22:56 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-07 17:22:59 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 17:23:00 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 198 ms. Found 1 JPA repository interface.
+2025-12-07 17:23:04 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-07 17:23:04 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 17:23:04 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-07 17:23:04 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-07 17:23:04 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7924 ms
+2025-12-07 17:23:05 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-07 17:23:06 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-07 17:23:06 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-07 17:23:06 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-07 17:23:06 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-07 17:23:06 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-07 17:23:07 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-07 17:23:07 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-07 17:23:07 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-07 17:23:09 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-07 17:23:09 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 17:23:11 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-07 17:23:14 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-07 17:23:14 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: e8e2747c-b2a1-4667-a857-0addec25fc39
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-07 17:23:14 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-07 17:23:14 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-07 17:23:15 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-07 17:23:15 INFO  c.e.u.UserserviceApplication - Started UserserviceApplication in 21.314 seconds (process running for 22.708)
+2025-12-07 17:23:21 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-07 17:23:21 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-07 17:23:21 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-07 17:30:38 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 6440 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-07 17:30:38 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 17:30:38 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-07 17:30:38 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-07 17:30:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 17:30:41 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 185 ms. Found 1 JPA repository interface.
+2025-12-07 17:30:44 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-07 17:30:44 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 17:30:44 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-07 17:30:45 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-07 17:30:45 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6956 ms
+2025-12-07 17:30:45 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-07 17:30:46 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-07 17:30:46 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-07 17:30:46 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-07 17:30:46 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-07 17:30:47 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-07 17:30:48 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-07 17:30:48 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-07 17:30:48 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-07 17:30:51 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-07 17:30:51 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 17:30:54 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-07 17:30:56 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-07 17:30:56 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 5084b53e-e6fb-4f12-9a49-2bd36b46d5b0
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-07 17:30:56 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-07 17:30:56 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-07 17:30:56 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-07 17:30:56 INFO  c.e.u.UserserviceApplication - Started UserserviceApplication in 20.228 seconds (process running for 21.048)
+2025-12-07 17:31:21 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-07 17:31:21 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-07 17:31:21 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-12-07 17:57:14 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 5232 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-07 17:57:14 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 17:57:14 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-07 17:57:14 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-07 17:57:19 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 17:57:20 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 766 ms. Found 1 JPA repository interface.
+2025-12-07 17:57:23 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-07 17:57:23 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 17:57:24 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-07 17:57:24 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-07 17:57:24 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 9376 ms
+2025-12-07 17:57:24 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-07 17:57:25 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-07 17:57:25 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-07 17:57:25 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-07 17:57:25 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-07 17:57:25 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-07 17:57:27 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-07 17:57:27 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-07 17:57:27 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-07 17:57:30 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-07 17:57:30 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 17:57:31 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-07 17:57:32 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-07 17:57:32 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 84b427c7-e83d-45c9-a750-87d9df9692d6
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-07 17:57:32 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-07 17:57:32 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-07 17:57:32 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-07 17:57:32 INFO  c.e.u.UserserviceApplication - Started UserserviceApplication in 20.81 seconds (process running for 22.647)
+2025-12-07 17:57:41 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-07 17:57:41 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-07 17:57:41 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-12-07 19:09:39 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 3656 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-07 19:09:39 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 19:09:40 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-07 19:09:40 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-07 19:09:44 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 19:09:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 350 ms. Found 1 JPA repository interface.
+2025-12-07 19:09:49 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-07 19:09:49 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 19:09:49 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-07 19:09:50 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-07 19:09:50 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 10118 ms
+2025-12-07 19:09:51 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-07 19:09:51 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-07 19:09:51 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-07 19:09:52 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-07 19:09:52 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-07 19:09:52 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-07 19:09:52 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-07 19:09:53 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-07 19:09:53 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-07 19:09:54 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-07 19:09:54 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 19:09:55 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-07 19:09:55 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-07 19:09:56 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: b5ab68cd-e9bc-4f64-954e-a2efa291d6d4
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-07 19:09:56 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-07 19:09:56 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-07 19:09:56 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-07 19:09:56 INFO  c.e.u.UserserviceApplication - Started UserserviceApplication in 18.853 seconds (process running for 26.134)
+2025-12-07 19:11:41 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 3484 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-07 19:11:41 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 19:11:41 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-07 19:11:41 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-07 19:11:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 19:11:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 85 ms. Found 1 JPA repository interface.
+2025-12-07 19:11:47 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-07 19:11:47 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 19:11:47 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-07 19:11:47 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-07 19:11:47 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5833 ms
+2025-12-07 19:11:47 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-07 19:11:47 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-07 19:11:47 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-07 19:11:48 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-07 19:11:48 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-07 19:11:48 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-07 19:11:48 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-07 19:11:48 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-07 19:11:48 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-07 19:11:50 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-07 19:11:50 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 19:11:51 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-07 19:20:41 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 11240 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-07 19:20:41 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 19:20:41 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-07 19:20:41 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-07 19:20:46 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 19:20:46 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 118 ms. Found 1 JPA repository interface.
+2025-12-07 19:20:48 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-07 19:20:48 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 19:20:48 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-07 19:20:48 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-07 19:20:48 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6830 ms
+2025-12-07 19:20:49 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-07 19:20:50 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-07 19:20:50 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-07 19:20:50 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-07 19:20:51 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-07 19:20:51 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-07 19:20:52 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-07 19:20:52 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-07 19:20:52 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-07 19:20:54 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-07 19:20:54 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 19:20:55 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-07 19:20:56 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-07 19:20:56 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 9b8ea9a2-e286-4c6d-a65e-9322dc991b66
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-07 19:20:56 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-07 19:20:57 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-07 19:20:57 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-07 19:20:57 INFO  c.e.u.UserserviceApplication - Started UserserviceApplication in 18.348 seconds (process running for 20.064)
+2025-12-07 19:22:51 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 6920 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-07 19:22:51 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 19:22:51 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-07 19:22:51 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-07 19:22:54 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 19:22:54 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 120 ms. Found 1 JPA repository interface.
+2025-12-07 19:22:57 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-07 19:22:57 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 19:22:57 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-07 19:22:58 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-07 19:22:58 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6464 ms
+2025-12-07 19:22:58 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-07 19:22:59 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-07 19:22:59 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-07 19:22:59 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-07 19:22:59 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-07 19:22:59 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-07 19:23:00 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-07 19:23:00 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-07 19:23:00 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-07 19:23:03 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-07 19:23:03 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 19:23:05 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-07 19:23:07 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-07 19:23:07 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: f230ae6c-5de0-460c-8085-5ee5a5058234
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-07 19:23:07 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-07 19:23:07 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-07 19:23:07 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-07 19:23:07 INFO  c.e.u.UserserviceApplication - Started UserserviceApplication in 17.938 seconds (process running for 18.739)
+2025-12-07 19:23:36 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-07 19:23:36 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-07 19:23:36 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
