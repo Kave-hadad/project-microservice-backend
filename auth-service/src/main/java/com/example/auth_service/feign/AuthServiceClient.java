@@ -15,27 +15,26 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.example.auth_service.dto.UserProfileDTO;
 
 @FeignClient(name = "userservice", url = "${user-service.url}" )
-//@FeignClient(name = "userservice", url = "${user-service.url}" , configuration = FeignAuthConfig.class)
+
 public interface AuthServiceClient {
 
-	
-	
-	  @GetMapping("/search")
-	  ResponseEntity <List<UserProfileDTO>> getUserByFamily(@RequestParam String family);
-	  @GetMapping
-	  ResponseEntity< List<UserProfileDTO>> getAllUsersProfiles();
-	  @PostMapping
-	  ResponseEntity<UserProfileDTO> createUserProfile(@RequestBody UserProfileDTO userProfileDto);
-	  @GetMapping("/{id}")
-	  ResponseEntity<UserProfileDTO> getUserByAuthUserId(@PathVariable("id") Long authUserId);
-      @DeleteMapping("/{id}")
-      ResponseEntity<Void> deleteUser(@PathVariable("id") Long authUserId);
-      @PatchMapping
- 	  ResponseEntity<UserProfileDTO> patchUser(@RequestBody UserProfileDTO updates);
-      
-      
-  	
 
-      
-      
+
+
+
+    @GetMapping("/api/users/search")
+    ResponseEntity <List<UserProfileDTO>> getUserByFamily(@RequestParam String family);
+    @GetMapping("/api/users")
+    ResponseEntity< List<UserProfileDTO>> getAllUsersProfiles();
+    @PostMapping("/api/users")
+    ResponseEntity<UserProfileDTO> createUserProfile(@RequestBody UserProfileDTO userProfileDto);
+
+    @GetMapping("/api/users/{id}")
+    ResponseEntity<UserProfileDTO> getUserByAuthUserId(@PathVariable("id") Long authUserId);
+    @DeleteMapping("/api/users/{id}")
+    ResponseEntity<Void> deleteUser(@PathVariable("id") Long authUserId);
+    @PatchMapping("/api/users")
+    ResponseEntity<UserProfileDTO> patchUser(@RequestBody UserProfileDTO updates);
+
+
 }

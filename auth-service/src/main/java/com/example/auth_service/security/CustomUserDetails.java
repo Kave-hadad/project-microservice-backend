@@ -54,7 +54,7 @@ public class CustomUserDetails implements UserDetails{
 	    return true;
 	}
 	
-   // @PreAuthorize("hasRole('ADMIN') or #authUserId == principal.id")
+
 
     public Long getId() {
         return userCredential.getId();

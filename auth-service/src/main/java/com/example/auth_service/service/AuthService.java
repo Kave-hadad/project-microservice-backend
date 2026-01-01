@@ -78,48 +78,7 @@ public class AuthService {
         return credentialRepository.save(credential);
 
     }
-/// before
 
-//    public UserProfileDTO createUserProfile(RegisterRequestDTO dto, long auth_user_id) {
-//        UserProfileDTO userProfileDto = dtoUserMapper.dtoToUserProfile(dto, auth_user_id);
-//        ResponseEntity<UserProfileDTO> response = AuthServiceClient.createUserProfile(userProfileDto);
-//
-//        return response.getBody();
-//    }
-
-    /// after
-//    public UserProfileDTO createUserProfile(RegisterRequestDTO dto, long authUserId) {
-//        UserProfileDTO userProfileDto = dtoUserMapper.dtoToUserProfileDto(dto, authUserId);
-//
-//        try {
-//            ResponseEntity<UserProfileDTO> response = AuthServiceClient.createUserProfile(userProfileDto);
-//
-//            if (response.getStatusCode().is2xxSuccessful()) {
-//                return response.getBody();
-//            } else {
-//                throw new UserServiceUnavailableException("Error creating profile: response status = " + response.getStatusCode());
-//            }
-//
-//        } catch (feign.FeignException.BadRequest ex) {
-//
-//            throw new UserServiceUnavailableException("Invalid input or validation failed: " + ex.contentUTF8());
-//
-//        } catch (feign.FeignException.NotFound ex) {
-//
-//            throw new UserServiceUnavailableException("User not found: " + ex.contentUTF8());
-//
-//        } catch (feign.FeignException.MethodNotAllowed ex) {
-//
-//            throw new UserServiceUnavailableException("Incorrect HTTP method used.");
-//
-//        } catch (feign.FeignException.InternalServerError ex) {
-
-//            throw new UserServiceUnavailableException("Internal error occurred in user service.");
-//        } catch (Exception ex) {
-//            // Any other unexpected error
-//            throw new UserServiceUnavailableException("Unexpected error communicating with user service: " + ex.getMessage());
-//        }
-//    }
 
 
     public UserProfileDTO createUserProfile(RegisterRequestDTO dto, long authUserId) {
@@ -139,99 +98,6 @@ public class AuthService {
 
 
 
-/// before
-//    public List<ResponseDTO> getAllUsers() {
-//
-//     List<UserCredential> usersCredentialsList = credentialRepository.findAll();
-////     RestTemplate restTemplate = builder.build();
-////     ResponseEntity<UserProfileDTO[]> response =restTemplate.getForEntity(userServiceUrl, UserProfileDTO[].class);
-////     UserProfileDTO[] usersArray = response.getBody();
-//     ResponseEntity<List<UserProfileDTO>> usersProfileList = AuthServiceClient.getAllUsersProfiles();
-//           //Arrays.asList(usersArray);
-//
-// //  // Create Map from profiles
-//     Map<Long, UserProfileDTO> profileMap = usersProfileList.getBody().stream()
-//              .collect(Collectors.toMap(
-//                  UserProfileDTO::getAuthUserId,
-//                  Function.identity()
-//              ));
-//     List<ResponseDTO> responseList = new ArrayList<>();
-//
-//     // Merge using for-each
-//     for (UserCredential credential : usersCredentialsList) {
-//       // profileMap.get(credential.getId()) is the key in the map and returns the profile for each key
-//         UserProfileDTO profile = profileMap.get(credential.getId());
-//         if (profile != null) {
-//             ResponseDTO dto = new ResponseDTO(
-//                     profile.getName(),
-//                     credential.getPassword(),
-//                     credential.getEmail(),
-//                     credential.getRole(),
-//                     credential.isEnabled(),
-//                     credential.getCreatedAt(),
-//                     profile.getFamily(),
-//                     profile.getPhone(),
-//                     profile.getAddress(),
-//                     profile.getBirthDate()
-//             );
-//             responseList.add(dto);
-//         }
-//     }
-//return responseList;
-//
-//    }
-
-    /// after
-//    public List<ResponseDTO> getAllUsers() {
-//        List<UserCredential> usersCredentialsList = credentialRepository.findAll();
-//
-//        try {
-//            ResponseEntity<List<UserProfileDTO>> response = AuthServiceClient.getAllUsersProfiles();
-//
-//            // if successful (2xx)
-//            if (response.getStatusCode().is2xxSuccessful() && response.getBody() != null) {
-//
-//                Map<Long, UserProfileDTO> profileMap = response.getBody().stream()
-//                        .collect(Collectors.toMap(
-//                                UserProfileDTO::getAuthUserId,
-//                                Function.identity()
-//                        ));
-//
-//                List<ResponseDTO> responseList = new ArrayList<>();
-//
-//                // Merge using for-each
-//                for (UserCredential credential : usersCredentialsList) {
-//                    UserProfileDTO profile = profileMap.get(credential.getId());
-//                    if (profile != null) {
-//                        ResponseDTO dto = mergeMapper.DtoProfileAndCredentialToResponseDto(profile, credential);
-//                        responseList.add(dto);
-//                    }
-//                }
-//                return responseList;
-//            } else {
-//                throw new UserServiceUnavailableException("Error retrieving profile list: response status = " + response.getStatusCode());
-//            }
-//
-//        } catch (feign.FeignException.BadRequest ex) {
-//
-//            throw new UserServiceUnavailableException("Invalid input or validation failed: " + ex.contentUTF8());
-//
-//        } catch (feign.FeignException.NotFound ex) {
-//
-//            throw new UserServiceUnavailableException("Profiles not found: " + ex.contentUTF8());
-//
-//        } catch (feign.FeignException.MethodNotAllowed ex) {
-//
-//            throw new UserServiceUnavailableException("Incorrect HTTP method used.");
-//
-//        } catch (feign.FeignException.InternalServerError ex) {
-//
-//            throw new UserServiceUnavailableException("Internal error occurred in user service.");
-//        } catch (Exception ex) {
-//
-//            throw new UserServiceUnavailableException("Unexpected error communicating with user service: " + ex.getMessage());
-//        }
-//    }
 
 
     public List<ResponseDTO> getAllUsers() {
@@ -268,47 +134,9 @@ public class AuthService {
         }
     }
 
-///////
-///before
-//    public List<ResponseDTO> getUserByFamily(String family) {
-//    	ResponseEntity<List<UserProfileDTO>> usersProfileList = AuthServiceClient.getUserByFamily(family);
-//
-//        Map<Long, UserProfileDTO> profileMap = usersProfileList.getBody().stream()
-//                .collect(Collectors.toMap(UserProfileDTO::getAuthUserId, Function.identity()));
-//
-//        List<Long> AuthUserIdList = new ArrayList<Long>();
-//        for(UserProfileDTO userAuthUserId :usersProfileList.getBody()) {
-//        	AuthUserIdList.add(userAuthUserId.getAuthUserId());
-//        }
-//        List<UserCredential> usersCredentialsList = credentialRepository.findByIdIn(AuthUserIdList);
 
-//      // List<UserCredential> usersCredentialsList = credentialRepository.findAll();
-//
 
-//        List<ResponseDTO> responseList = new ArrayList<>();
-//        for (UserCredential credential : usersCredentialsList) {
-//            UserProfileDTO profile = profileMap.get(credential.getId());
-//            if (profile != null) {
-//                ResponseDTO dto = new ResponseDTO(
-//                        profile.getName(),
-//                        credential.getPassword(),
-//                        credential.getEmail(),
-//                        credential.getRole(),
-//                        credential.isEnabled(),
-//                        credential.getCreatedAt(),
-//                        profile.getFamily(),
-//                        profile.getPhone(),
-//                        profile.getAddress(),
-//                        profile.getBirthDate()
-//                );
-//                responseList.add(dto);
-//            }
-//        }
-//
-//        return responseList;
-//    }
 
-    /// after
     public List<ResponseDTO> getUserByFamily(String family) {
 
         ResponseEntity<List<UserProfileDTO>> response = AuthServiceClient.getUserByFamily(family);
@@ -343,15 +171,32 @@ public class AuthService {
         }
     }
 
-    public ResponseDTO getUserByAuthUserId(long id){
-    	Optional<UserCredential> userCredential = credentialRepository.findById(id);
-    	ResponseEntity<UserProfileDTO>  userProfileDto = AuthServiceClient.getUserByAuthUserId(id);
-    	ResponseDTO response = mergeMapper.DtoProfileAndCredentialToResponseDto(userProfileDto.getBody(), userCredential.get());
-   return response;
 
+
+    public ResponseDTO getUserByAuthUserId(long id) {
+
+        Optional<UserCredential> userCredential = credentialRepository.findById(id);
+        if (userCredential.isEmpty()) {
+
+            throw new UserNotFoundException("User with id " + id + " was not found in credentialRepository.");
+
+        }
+
+
+        ResponseEntity<UserProfileDTO> userProfileDto = AuthServiceClient.getUserByAuthUserId(id);
+
+
+
+        if (userProfileDto.getStatusCode().is2xxSuccessful() && userProfileDto.getBody() != null) {
+            ResponseDTO response = mergeMapper.dtoProfileAndCredentialToResponseDto(userProfileDto.getBody(),
+                    userCredential.get());
+            return response;
+        } else {
+
+            throw new AuthServiceUnavailableException(
+                    "Error receiving user profile: response status =" + userProfileDto.getStatusCode());
+        }
     }
-
-
 
 
     @Transactional
@@ -373,7 +218,7 @@ public class AuthService {
         if (response.getStatusCode().is2xxSuccessful()) {
 
             credentialRepository.deleteById(id);
-            return; //
+
         } else {
 
 
@@ -382,13 +227,29 @@ public class AuthService {
         }
     }
 
-        public ResponseEntity<UserProfileDTO> patchUser( RegisterRequestDTO dto,long authUserId){
-    	 UserCredential credential = dtoUserMapper.dtoToCredential(dto);
-    	credentialRepository.save(credential);
-    	  UserProfileDTO userProfileDto = dtoUserMapper.dtoToUserProfileDto(dto, authUserId);
-    	  ResponseEntity<UserProfileDTO> response = AuthServiceClient.patchUser(userProfileDto);
-    	  return response;
-    }
 
+    @Transactional
+    public UserProfileDTO patchUser(RegisterRequestDTO dto, long authUserId) {
+
+
+        UserProfileDTO userProfileDto = dtoUserMapper.dtoToUserProfileDto(dto, authUserId);
+
+        ResponseEntity<UserProfileDTO> response = AuthServiceClient.patchUser(userProfileDto);
+
+
+        if (response.getStatusCode().is2xxSuccessful() && response.getBody() != null) {
+            UserCredential credential = credentialRepository.findById(authUserId)
+                    .orElseThrow(() -> new UserNotFoundException("User with id " + authUserId + " was not found."));
+            credential.setPassword(passwordEncoder.encode(dto.getPassword()));
+            credentialRepository.save(credential);
+
+            return response.getBody();
+        } else {
+
+
+            throw new AuthServiceUnavailableException(
+                    "Error updating user profile: response status = " + response.getStatusCode());
+        }
+    }
 
 }

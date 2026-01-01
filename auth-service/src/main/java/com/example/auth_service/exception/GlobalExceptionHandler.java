@@ -96,8 +96,7 @@ public class GlobalExceptionHandler {
                 .body("Invalid or expired token.");
     }
 
-    //////////////////////////////////////////////////////////////////////////////////////////////////////////
-    /// Feign Exceptions
+
 
     @ExceptionHandler(FeignException.class)
     public ResponseEntity<String> handleFeignStatusException(FeignException ex) {
@@ -121,32 +120,9 @@ public class GlobalExceptionHandler {
                 .body("Failed to connect to user service.");
     }
 
-    //////////////////////////////////////////////////////////////////////////////////////////////////////////
-    /// RestTemplate Exceptions
 
-    @ExceptionHandler(HttpClientErrorException.class)
-    public ResponseEntity<String> handleClientError(HttpClientErrorException ex) {
-        logger.warn("Client error when calling user-service: {}", ex.getMessage());
-        return ResponseEntity.status(ex.getStatusCode())
-                .body("Client error when communicating with user service.");
-    }
 
-    @ExceptionHandler(HttpServerErrorException.class)
-    public ResponseEntity<String> handleServerError(HttpServerErrorException ex) {
-        logger.error("Server error from user-service: {}", ex.getMessage(), ex);
-        return ResponseEntity.status(HttpStatus.BAD_GATEWAY)
-                .body("User service is unavailable. Please try again later.");
-    }
 
-    @ExceptionHandler(ResourceAccessException.class)
-    public ResponseEntity<String> handleConnectionError(ResourceAccessException ex) {
-        logger.error("Cannot connect to user-service: {}", ex.getMessage(), ex);
-        return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE)
-                .body("Failed to connect to user service.");
-    }
-
-    //////////////////////////////////////////////////////////////////////////////////////////////////////////
-    /// Custom Auth Exceptions
 
     @ExceptionHandler(InvalidTokenException.class)
     public ResponseEntity<String> handleInvalidToken(InvalidTokenException ex) {
