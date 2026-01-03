@@ -9,17 +9,12 @@ import com.example.auth_service.entity.UserCredential;
 @Component
 public class DtoUserMapper {
 	
-
     public UserCredential dtoToCredential(RegisterRequestDTO dto) {
         UserCredential credential = new UserCredential();
         credential.setEmail(dto.getEmail());
-    //    credential.setPassword(dto.getPassword());
-   //     credential.setRole("ROLE_USER");
-   //     credential.setEnabled(true);
-    //    credential.setCreatedAt(LocalDateTime.now());
+
         return credential;
     }
-
 
     public UserProfileDTO dtoToUserProfileDto(RegisterRequestDTO dto,long auth_user_id ) {
         UserProfileDTO profile = new UserProfileDTO();

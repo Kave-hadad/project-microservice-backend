@@ -14,8 +14,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-
-
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "user_credentials", uniqueConstraints = {
@@ -25,13 +23,13 @@ import lombok.NoArgsConstructor;
 public class UserCredential {
 	   @Id
 	   @GeneratedValue(strategy = GenerationType.IDENTITY)
-	    private Long id;
+	    private Long id;               
 	   @Column(nullable = false, unique = true)
-	    private String email;
-	    private String password;
-	    private String role;
-	    private boolean enabled;
-	    private LocalDateTime createdAt;
+	    private String email;      
+	    private String password;      
+	    private String role;         
+	    private boolean enabled;      
+	    private LocalDateTime createdAt; 
 
 
 

@@ -1,0 +1,770 @@
+2025-12-10 12:03:38 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 4088 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-10 12:03:38 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-10 12:03:38 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-10 12:03:38 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-10 12:03:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-10 12:03:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 125 ms. Found 1 JPA repository interface.
+2025-12-10 12:03:42 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-10 12:03:42 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-10 12:03:42 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-12-10 12:03:42 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-10 12:03:42 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4269 ms
+2025-12-10 12:03:42 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-10 12:03:43 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-10 12:03:43 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-10 12:03:43 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-10 12:03:43 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-10 12:03:43 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-12-10 12:03:43 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-10 12:03:44 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-10 12:03:44 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-10 12:03:46 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-10 12:03:46 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-10 12:03:47 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-10 12:03:47 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 0d8197d0-44f4-4425-abe8-9dc8c07e032e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-10 12:03:47 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-10 12:03:48 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-10 12:03:49 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-10 12:03:49 INFO  c.e.u.UserserviceApplication - Started UserserviceApplication in 12.097 seconds (process running for 19.414)
+2025-12-10 12:04:09 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-10 12:04:09 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-10 12:04:09 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-12-10 12:04:09 INFO  c.e.user_service.service.UserService - Creating user by createUser with AuthUserId: 1
+2025-12-10 12:04:09 INFO  c.e.u.controller.UserController - Admin creating user by this path /api/users with AuthUserId: 1
+2025-12-10 12:04:10 INFO  c.e.user_service.service.UserService - Creating user by createUser with AuthUserId: 2
+2025-12-10 12:04:10 INFO  c.e.u.controller.UserController - Admin creating user by this path /api/users with AuthUserId: 2
+2025-12-10 12:07:09 WARN  c.e.u.controller.UserController - Deleting user by AuthUserId: 2
+2025-12-10 12:07:09 WARN  c.e.user_service.service.UserService - Deleting userProfile by AuthUserId: 2
+2025-12-10 12:09:02 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 6508 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-10 12:09:02 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-10 12:09:03 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-10 12:09:03 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-10 12:09:05 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-10 12:09:05 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 93 ms. Found 1 JPA repository interface.
+2025-12-10 12:09:07 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-10 12:09:07 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-10 12:09:07 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-12-10 12:09:07 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-10 12:09:07 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4547 ms
+2025-12-10 12:09:07 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-10 12:09:08 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-10 12:09:08 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-10 12:09:08 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-10 12:09:08 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-10 12:09:09 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-12-10 12:09:09 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-10 12:09:09 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-10 12:09:09 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-10 12:09:11 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-10 12:09:11 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-10 12:09:12 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-10 12:09:12 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 6975cdc8-adcd-4da6-a9b8-d35020eec94a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-10 12:09:12 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-10 12:09:14 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-10 12:09:14 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-10 12:09:14 INFO  c.e.u.UserserviceApplication - Started UserserviceApplication in 12.492 seconds (process running for 13.582)
+2025-12-10 12:09:33 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-10 12:09:33 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-10 12:09:33 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-12-10 12:09:33 INFO  c.e.user_service.service.UserService - Creating user by createUser with AuthUserId: 1
+2025-12-10 12:09:33 INFO  c.e.u.controller.UserController - Admin creating user by this path /api/users with AuthUserId: 1
+2025-12-10 12:09:34 INFO  c.e.user_service.service.UserService - Creating user by createUser with AuthUserId: 2
+2025-12-10 12:09:34 INFO  c.e.u.controller.UserController - Admin creating user by this path /api/users with AuthUserId: 2
+2025-12-10 12:12:04 ERROR c.e.u.e.GlobalExceptionHandler - Unexpected error: Access Denied
+org.springframework.security.authorization.AuthorizationDeniedException: Access Denied
+	at org.springframework.security.authorization.method.ThrowingMethodAuthorizationDeniedHandler.handleDeniedInvocation(ThrowingMethodAuthorizationDeniedHandler.java:38)
+	at org.springframework.security.authorization.method.PreAuthorizeAuthorizationManager.handleDeniedInvocation(PreAuthorizeAuthorizationManager.java:92)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.handle(AuthorizationManagerBeforeMethodInterceptor.java:288)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.attemptAuthorization(AuthorizationManagerBeforeMethodInterceptor.java:261)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.invoke(AuthorizationManagerBeforeMethodInterceptor.java:197)
+	at org.springframework.security.config.annotation.method.configuration.DeferringMethodInterceptor.invoke(DeferringMethodInterceptor.java:44)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.example.user_service.controller.UserController$$SpringCGLIB$$0.getUserByAuthUserId(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-12-10 12:12:04 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2025-12-10 12:26:03 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 10228 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-10 12:26:03 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-10 12:26:03 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-10 12:26:03 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-10 12:26:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-10 12:26:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 464 ms. Found 1 JPA repository interface.
+2025-12-10 12:26:13 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-10 12:26:13 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-10 12:26:13 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-12-10 12:26:13 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-10 12:26:13 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 10031 ms
+2025-12-10 12:26:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-10 12:26:13 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-10 12:26:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-10 12:26:14 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-10 12:26:14 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-10 12:26:14 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-12-10 12:26:14 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-10 12:26:15 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-10 12:26:15 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-10 12:26:17 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-10 12:26:17 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-10 12:26:18 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-10 12:26:18 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 11a7101c-8a0a-413a-ab4b-4b228be4dd79
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-10 12:26:18 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-10 12:26:19 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-10 12:26:19 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-10 12:26:19 INFO  c.e.u.UserserviceApplication - Started UserserviceApplication in 20.247 seconds (process running for 25.224)
+2025-12-10 12:26:42 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 5132 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-10 12:26:42 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-10 12:26:42 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-10 12:26:42 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-10 12:26:44 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-10 12:26:44 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 95 ms. Found 1 JPA repository interface.
+2025-12-10 12:26:45 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-10 12:26:45 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-10 12:26:45 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-12-10 12:26:45 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-10 12:26:45 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3424 ms
+2025-12-10 12:26:46 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-10 12:26:46 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-10 12:26:46 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-10 12:26:46 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-10 12:26:46 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-10 12:26:46 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-12-10 12:26:47 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-10 12:27:10 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-10 12:27:10 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-10 12:27:10 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-12-10 12:27:11 INFO  c.e.user_service.service.UserService - Creating user by createUser with AuthUserId: 1
+2025-12-10 12:27:11 INFO  c.e.u.controller.UserController - Admin creating user by this path /api/users with AuthUserId: 1
+2025-12-10 12:27:11 INFO  c.e.user_service.service.UserService - Creating user by createUser with AuthUserId: 2
+2025-12-10 12:27:11 INFO  c.e.u.controller.UserController - Admin creating user by this path /api/users with AuthUserId: 2
+2025-12-10 12:28:17 INFO  c.e.u.controller.UserController - Fetching user by AuthUserId: 2
+2025-12-10 12:28:17 INFO  c.e.user_service.service.UserService - Fetching user by AuthUserId: 2
+2025-12-10 12:28:24 INFO  c.e.u.controller.UserController - Fetching user by AuthUserId: 1
+2025-12-10 12:28:24 INFO  c.e.user_service.service.UserService - Fetching user by AuthUserId: 1
+2025-12-10 19:16:20 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 1856 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-10 19:16:20 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-10 19:16:20 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-10 19:16:20 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-10 19:16:26 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-10 19:16:26 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 168 ms. Found 1 JPA repository interface.
+2025-12-10 19:16:28 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-10 19:16:29 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-10 19:16:29 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-12-10 19:16:29 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-10 19:16:29 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 8728 ms
+2025-12-10 19:16:29 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-10 19:16:29 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-10 19:16:29 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-10 19:16:29 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-10 19:16:30 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-10 19:16:30 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-12-10 19:16:30 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-10 19:16:31 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-10 19:16:31 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-10 19:16:33 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-10 19:16:33 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-10 19:16:34 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-10 19:16:34 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 38aea28c-1bad-45d7-946e-5fa13606f3c9
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-10 19:16:34 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-10 19:16:35 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-10 19:16:35 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-10 19:16:35 INFO  c.e.u.UserserviceApplication - Started UserserviceApplication in 16.938 seconds (process running for 24.279)
+2025-12-10 19:17:50 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-10 19:17:50 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-10 19:17:50 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-12-10 19:17:51 INFO  c.e.user_service.service.UserService - Creating user by createUser with AuthUserId: 1
+2025-12-10 19:17:51 INFO  c.e.u.controller.UserController - Admin creating user by this path /api/users with AuthUserId: 1
+2025-12-10 19:17:51 INFO  c.e.user_service.service.UserService - Creating user by createUser with AuthUserId: 2
+2025-12-10 19:17:51 INFO  c.e.u.controller.UserController - Admin creating user by this path /api/users with AuthUserId: 2
+2025-12-10 19:19:07 INFO  c.e.user_service.service.UserService - Creating user by createUser with AuthUserId: 3
+2025-12-10 19:19:07 INFO  c.e.u.controller.UserController - Admin creating user by this path /api/users with AuthUserId: 3
+2025-12-10 19:22:38 INFO  c.e.user_service.service.UserService - Creating user by createUser with AuthUserId: 4
+2025-12-10 19:22:38 INFO  c.e.u.controller.UserController - Admin creating user by this path /api/users with AuthUserId: 4
+2025-12-10 19:23:06 INFO  c.e.u.controller.UserController - Fetching  AllUsersProfiles 
+2025-12-10 19:23:06 INFO  c.e.user_service.service.UserService - Fetching getAllUsers
+2025-12-10 19:26:01 INFO  c.e.u.controller.UserController - Fetching  AllUsersProfiles 
+2025-12-10 19:26:01 INFO  c.e.user_service.service.UserService - Fetching getAllUsers
+2025-12-10 19:32:34 INFO  c.e.u.controller.UserController - Fetching  AllUsersProfiles 
+2025-12-10 19:32:34 INFO  c.e.user_service.service.UserService - Fetching getAllUsers
+2025-12-10 19:34:08 INFO  c.e.u.controller.UserController - Fetching  AllUsersProfiles 
+2025-12-10 19:34:08 INFO  c.e.user_service.service.UserService - Fetching getAllUsers
+2025-12-10 19:34:42 INFO  c.e.u.controller.UserController - Fetching  AllUsersProfiles 
+2025-12-10 19:34:42 INFO  c.e.user_service.service.UserService - Fetching getAllUsers
+2025-12-10 19:39:42 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 7260 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-10 19:39:42 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-10 19:39:42 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-10 19:39:42 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-10 19:39:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-10 19:39:46 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 578 ms. Found 1 JPA repository interface.
+2025-12-10 19:39:48 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-10 19:39:48 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-10 19:39:48 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-12-10 19:39:48 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-10 19:39:48 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5806 ms
+2025-12-10 19:39:48 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-10 19:39:49 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-10 19:39:49 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-10 19:39:49 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-10 19:39:49 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-10 19:39:50 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-12-10 19:39:50 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-10 19:39:50 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-10 19:39:50 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-10 19:39:52 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-10 19:39:52 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-10 19:39:53 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-10 19:39:53 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 2f56e19f-4d98-43d7-908e-e70eed8571e0
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-10 19:39:53 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-10 19:39:54 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-10 19:39:54 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-10 19:39:54 INFO  c.e.u.UserserviceApplication - Started UserserviceApplication in 12.865 seconds (process running for 20.245)
+2025-12-10 19:40:15 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-10 19:40:15 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-10 19:40:15 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-12-10 19:40:15 INFO  c.e.user_service.service.UserService - Creating user by createUser with AuthUserId: 1
+2025-12-10 19:40:15 INFO  c.e.u.controller.UserController - Admin creating user by this path /api/users with AuthUserId: 1
+2025-12-10 19:40:16 INFO  c.e.user_service.service.UserService - Creating user by createUser with AuthUserId: 2
+2025-12-10 19:40:16 INFO  c.e.u.controller.UserController - Admin creating user by this path /api/users with AuthUserId: 2
+2025-12-10 19:42:42 INFO  c.e.user_service.service.UserService - Creating user by createUser with AuthUserId: 3
+2025-12-10 19:42:42 INFO  c.e.u.controller.UserController - Admin creating user by this path /api/users with AuthUserId: 3
+2025-12-10 19:43:09 INFO  c.e.u.controller.UserController - Fetching  AllUsersProfiles 
+2025-12-10 19:43:09 INFO  c.e.user_service.service.UserService - Fetching getAllUsers
+2025-12-10 19:49:34 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 3920 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-10 19:49:34 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-10 19:49:34 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-10 19:49:34 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-10 19:49:36 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-10 19:49:37 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 95 ms. Found 1 JPA repository interface.
+2025-12-10 19:49:43 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 11464 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-10 19:49:43 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-10 19:49:43 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-10 19:49:43 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-10 19:49:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-10 19:49:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 115 ms. Found 1 JPA repository interface.
+2025-12-10 19:49:47 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-10 19:49:47 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-10 19:49:47 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-12-10 19:49:47 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-10 19:49:47 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3819 ms
+2025-12-10 19:49:47 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-10 19:49:47 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-10 19:49:47 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-10 19:49:47 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-10 19:49:48 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-10 19:49:48 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-12-10 19:49:48 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-10 19:49:49 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-10 19:49:49 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-10 19:49:50 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-10 19:49:50 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-10 19:49:51 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-10 19:49:51 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: e7d66bab-cdf6-42a9-a1a2-2b31928ae92d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-10 19:49:51 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-10 19:49:52 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-10 19:49:52 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-10 19:49:52 INFO  c.e.u.UserserviceApplication - Started UserserviceApplication in 10.413 seconds (process running for 11.434)
+2025-12-10 19:50:15 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-10 19:50:15 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-10 19:50:15 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2025-12-10 19:50:15 INFO  c.e.user_service.service.UserService - Creating user by createUser with AuthUserId: 1
+2025-12-10 19:50:15 INFO  c.e.u.controller.UserController - Admin creating user by this path /api/users with AuthUserId: 1
+2025-12-10 19:50:15 INFO  c.e.user_service.service.UserService - Creating user by createUser with AuthUserId: 2
+2025-12-10 19:50:15 INFO  c.e.u.controller.UserController - Admin creating user by this path /api/users with AuthUserId: 2
+2025-12-10 19:51:17 INFO  c.e.user_service.service.UserService - Creating user by createUser with AuthUserId: 3
+2025-12-10 19:51:17 INFO  c.e.u.controller.UserController - Admin creating user by this path /api/users with AuthUserId: 3
+2025-12-10 19:51:47 INFO  c.e.u.controller.UserController - Fetching  AllUsersProfiles 
+2025-12-10 19:51:47 INFO  c.e.user_service.service.UserService - Fetching getAllUsers
+2025-12-10 20:07:43 INFO  c.e.user_service.service.UserService - Creating user by createUser with AuthUserId: 1
+2025-12-10 20:07:43 INFO  c.e.u.controller.UserController - Admin creating user by this path /api/users with AuthUserId: 1
+2025-12-10 20:07:43 INFO  c.e.user_service.service.UserService - Creating user by createUser with AuthUserId: 2
+2025-12-10 20:07:43 INFO  c.e.u.controller.UserController - Admin creating user by this path /api/users with AuthUserId: 2
+2025-12-10 20:09:25 INFO  c.e.u.controller.UserController - Fetching  AllUsersProfiles 
+2025-12-10 20:09:25 INFO  c.e.user_service.service.UserService - Fetching getAllUsers
+2025-12-10 20:09:43 INFO  c.e.u.controller.UserController - Fetching  AllUsersProfiles 
+2025-12-10 20:09:43 INFO  c.e.user_service.service.UserService - Fetching getAllUsers
+2025-12-10 20:11:20 INFO  c.e.user_service.service.UserService - Creating user by createUser with AuthUserId: 1
+2025-12-10 20:11:20 INFO  c.e.u.controller.UserController - Admin creating user by this path /api/users with AuthUserId: 1
+2025-12-10 20:11:21 INFO  c.e.user_service.service.UserService - Creating user by createUser with AuthUserId: 2
+2025-12-10 20:11:21 INFO  c.e.u.controller.UserController - Admin creating user by this path /api/users with AuthUserId: 2
+2025-12-10 20:11:30 INFO  c.e.u.controller.UserController - Fetching  AllUsersProfiles 
+2025-12-10 20:11:30 INFO  c.e.user_service.service.UserService - Fetching getAllUsers
+2025-12-10 20:12:11 INFO  c.e.u.controller.UserController - Fetching user by AuthUserId: 1
+2025-12-10 20:12:11 INFO  c.e.user_service.service.UserService - Fetching user by AuthUserId: 1
+2025-12-10 20:12:11 ERROR c.e.u.e.GlobalExceptionHandler - Unexpected error: Query did not return a unique result: 3 results were returned
+org.springframework.dao.IncorrectResultSizeDataAccessException: Query did not return a unique result: 3 results were returned
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:301)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:244)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:335)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:160)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy4/jdk.proxy4.$Proxy133.findByAuthUserId(Unknown Source)
+	at com.example.user_service.service.UserService.getUserByAuthUserId(UserService.java:48)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:716)
+	at com.example.user_service.service.UserService$$SpringCGLIB$$0.getUserByAuthUserId(<generated>)
+	at com.example.user_service.controller.UserController.getUserByAuthUserId(UserController.java:49)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.hibernate.NonUniqueResultException: Query did not return a unique result: 3 results were returned
+	at org.hibernate.query.spi.AbstractSelectionQuery.uniqueElement(AbstractSelectionQuery.java:578)
+	at org.hibernate.query.spi.AbstractSelectionQuery.getSingleResult(AbstractSelectionQuery.java:561)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution.doExecute(JpaQueryExecution.java:223)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:92)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:152)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:140)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:169)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:148)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:379)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	... 103 common frames omitted
+2025-12-10 20:12:11 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.IncorrectResultSizeDataAccessException: Query did not return a unique result: 3 results were returned]
+2025-12-10 20:16:22 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 10104 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-10 20:16:22 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-10 20:16:22 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-10 20:16:22 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-10 20:16:25 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-10 20:16:25 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 101 ms. Found 1 JPA repository interface.
+2025-12-10 20:16:26 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-10 20:16:26 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-10 20:16:26 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-12-10 20:16:27 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-10 20:16:27 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4123 ms
+2025-12-10 20:16:27 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-10 20:16:27 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-10 20:16:27 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-10 20:16:27 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-10 20:16:27 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-10 20:16:28 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-12-10 20:16:28 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-10 20:16:28 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-10 20:16:29 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-10 20:16:30 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-10 20:16:30 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-10 20:16:31 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-10 20:16:31 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: c742436c-021a-4ce2-95fe-1895cc9c27ae
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-10 20:16:31 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-10 20:16:33 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-10 20:16:33 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-10 20:16:33 INFO  c.e.u.UserserviceApplication - Started UserserviceApplication in 11.435 seconds (process running for 12.576)
+2025-12-10 20:16:55 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-10 20:16:55 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-10 20:16:55 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+2025-12-10 20:16:56 INFO  c.e.user_service.service.UserService - Creating user by createUser with AuthUserId: 1
+2025-12-10 20:16:56 INFO  c.e.u.controller.UserController - Admin creating user by this path /api/users with AuthUserId: 1
+2025-12-10 20:16:56 INFO  c.e.user_service.service.UserService - Creating user by createUser with AuthUserId: 2
+2025-12-10 20:16:56 INFO  c.e.u.controller.UserController - Admin creating user by this path /api/users with AuthUserId: 2
+2025-12-10 20:17:46 INFO  c.e.user_service.service.UserService - Fetching getAllUsers
+2025-12-10 20:18:44 INFO  c.e.user_service.service.UserService - Fetching getAllUsers
+2025-12-10 20:20:48 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 10968 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-10 20:20:48 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-10 20:20:48 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-10 20:20:48 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-10 20:20:51 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-10 20:20:51 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 113 ms. Found 1 JPA repository interface.
+2025-12-10 20:20:52 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-10 20:20:52 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-10 20:20:52 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-12-10 20:20:52 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-10 20:20:52 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3801 ms
+2025-12-10 20:20:52 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-10 20:20:53 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-10 20:20:53 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-10 20:20:53 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-10 20:20:53 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-10 20:20:53 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-12-10 20:20:53 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-10 20:20:54 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-10 20:20:54 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-10 20:20:55 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-10 20:20:55 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-10 20:20:56 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-10 20:20:56 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 5d4c5150-4673-4112-8344-0ced4a1a2773
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-10 20:20:56 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-10 20:20:58 WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2025-12-10 20:20:58 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-12-10 20:20:58 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-10 20:20:58 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2025-12-10 20:20:58 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-10 20:20:58 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-10 20:20:58 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-10 20:20:58 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8082 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8082 or configure this application to listen on another port.
+
+2025-12-10 20:21:17 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 3684 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-10 20:21:18 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-10 20:21:18 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-10 20:21:18 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-10 20:21:20 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-10 20:21:20 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 93 ms. Found 1 JPA repository interface.
+2025-12-10 20:21:21 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-10 20:21:21 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-10 20:21:21 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-12-10 20:21:21 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-10 20:21:21 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3687 ms
+2025-12-10 20:21:21 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-10 20:21:22 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-10 20:21:22 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-10 20:21:22 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-10 20:21:22 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-10 20:21:22 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-12-10 20:21:22 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-10 20:21:23 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-10 20:21:23 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-10 20:21:25 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-10 20:21:25 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-10 20:21:26 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-10 20:21:26 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: a0497a9b-3cb1-41cd-a230-6e074d609d1f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-10 20:21:26 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-10 20:21:27 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-10 20:21:27 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-10 20:21:27 INFO  c.e.u.UserserviceApplication - Started UserserviceApplication in 10.416 seconds (process running for 11.347)
+2025-12-10 20:21:51 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-10 20:21:51 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-10 20:21:51 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2025-12-10 20:21:52 INFO  c.e.user_service.service.UserService - Creating user by createUser with AuthUserId: 1
+2025-12-10 20:21:52 INFO  c.e.u.controller.UserController - Admin creating user by this path /api/users with AuthUserId: 1
+2025-12-10 20:21:52 INFO  c.e.user_service.service.UserService - Creating user by createUser with AuthUserId: 2
+2025-12-10 20:21:52 INFO  c.e.u.controller.UserController - Admin creating user by this path /api/users with AuthUserId: 2
+2025-12-10 20:22:18 INFO  c.e.user_service.service.UserService - Fetching getAllUsers
+2025-12-10 20:23:10 WARN  c.e.u.controller.UserController - Deleting user by AuthUserId: 2
+2025-12-10 20:23:10 WARN  c.e.user_service.service.UserService - Deleting userProfile by AuthUserId: 2
+2025-12-10 20:23:27 INFO  c.e.user_service.service.UserService - Fetching getAllUsers
+2025-12-10 20:28:17 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 8544 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-10 20:28:17 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-10 20:28:18 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-10 20:28:18 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-10 20:28:20 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-10 20:28:20 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 101 ms. Found 1 JPA repository interface.
+2025-12-10 20:28:21 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-10 20:28:21 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-10 20:28:21 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-12-10 20:28:22 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-10 20:28:22 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3923 ms
+2025-12-10 20:28:22 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-10 20:28:22 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-10 20:28:22 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-10 20:28:22 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-10 20:28:23 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-10 20:28:23 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-12-10 20:28:23 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-10 20:28:23 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-10 20:28:24 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-10 20:28:25 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-10 20:28:25 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-10 20:28:26 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-10 20:28:26 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 24ffa3e0-086f-4c55-9087-0664d3f47c82
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-10 20:28:26 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-10 20:28:27 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-10 20:28:27 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-10 20:28:28 INFO  c.e.u.UserserviceApplication - Started UserserviceApplication in 10.973 seconds (process running for 11.82)
+2025-12-10 20:28:46 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-10 20:28:46 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-10 20:28:47 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2025-12-10 20:28:47 INFO  c.e.user_service.service.UserService - Creating user by createUser with AuthUserId: 1
+2025-12-10 20:28:47 INFO  c.e.u.controller.UserController - Admin creating user by this path /api/users with AuthUserId: 1
+2025-12-10 20:28:47 INFO  c.e.user_service.service.UserService - Creating user by createUser with AuthUserId: 2
+2025-12-10 20:28:47 INFO  c.e.u.controller.UserController - Admin creating user by this path /api/users with AuthUserId: 2
+2025-12-10 20:29:19 INFO  c.e.user_service.service.UserService - Fetching getAllUsers
+2025-12-10 20:34:18 INFO  c.e.u.UserserviceApplication - Starting UserserviceApplication using Java 21.0.8 with PID 6652 (C:\Users\k\Desktop\userservice\userservice\target\classes started by k in C:\Users\k\Desktop\userservice\userservice)
+2025-12-10 20:34:18 INFO  c.e.u.UserserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-10 20:34:19 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-10 20:34:19 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-10 20:34:21 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-10 20:34:21 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 102 ms. Found 1 JPA repository interface.
+2025-12-10 20:34:22 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-10 20:34:22 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-10 20:34:22 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-12-10 20:34:22 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-10 20:34:22 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3840 ms
+2025-12-10 20:34:23 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-10 20:34:23 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=ADMIN
+2025-12-10 20:34:23 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-10 20:34:23 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2025-12-10 20:34:23 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-10 20:34:24 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-12-10 20:34:24 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-10 20:34:24 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-10 20:34:24 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-10 20:34:26 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-10 20:34:26 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-10 20:34:27 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-10 20:34:27 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 05b638ee-c45f-4747-88a7-8d4d0771d33d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-10 20:34:27 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-10 20:34:29 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-10 20:34:29 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-10 20:34:29 INFO  c.e.u.UserserviceApplication - Started UserserviceApplication in 11.801 seconds (process running for 12.814)
+2025-12-10 20:34:43 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-10 20:34:43 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-10 20:34:43 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-12-10 20:34:43 INFO  c.e.user_service.service.UserService - Creating user by createUser with AuthUserId: 1
+2025-12-10 20:34:43 INFO  c.e.u.controller.UserController - Admin creating user by this path /api/users with AuthUserId: 1
+2025-12-10 20:34:43 INFO  c.e.user_service.service.UserService - Creating user by createUser with AuthUserId: 2
+2025-12-10 20:34:43 INFO  c.e.u.controller.UserController - Admin creating user by this path /api/users with AuthUserId: 2
+2025-12-10 20:35:21 INFO  c.e.user_service.service.UserService - Fetching getAllUsers
+2025-12-10 20:35:27 INFO  c.e.u.controller.UserController -  updating  a field of user by AuthUserId: 2
+2025-12-10 20:35:27 INFO  c.e.user_service.service.UserService - Starting patchUser update for user AuthUserId: 2
+2025-12-10 20:35:28 INFO  c.e.user_service.service.UserService -  patchUser: Successfully  updated user AuthUserId: 2
+2025-12-10 20:36:47 INFO  c.e.user_service.service.UserService - Fetching getAllUsers
+2025-12-10 20:37:10 INFO  c.e.u.controller.UserController -  updating  a field of user by AuthUserId: 2
+2025-12-10 20:37:10 INFO  c.e.user_service.service.UserService - Starting patchUser update for user AuthUserId: 2
+2025-12-10 20:37:10 INFO  c.e.user_service.service.UserService -  patchUser: Successfully  updated user AuthUserId: 2
+2025-12-10 20:37:35 INFO  c.e.user_service.service.UserService - Fetching getAllUsers

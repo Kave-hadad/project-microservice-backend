@@ -1,7 +1,6 @@
 package com.example.user_service.dto;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -29,7 +28,7 @@ public class UserProfileDTO {
 
     @NotBlank(message = "Address is required")
     private String address;
-///@NotNull
+
     @NotNull(message = "Birth date is required")
     private LocalDate birthDate;
 

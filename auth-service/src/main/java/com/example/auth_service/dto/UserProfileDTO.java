@@ -11,13 +11,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class UserProfileDTO {
-
- 	private Long authUserId;
+	private Long authUserId;
 
 	private String name;
 
 	private String family;
-
 	private String email;
 
 	private String phone;

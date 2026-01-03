@@ -1,16 +1,12 @@
 package com.example.auth_service.service;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -37,36 +33,29 @@ public class AuthService {
     private final MergeMapper mergeMapper;
     private final CredentialRepository credentialRepository;
     private final PasswordEncoder passwordEncoder;
-    private final AuthServiceClient AuthServiceClient;
-
-    @Value("${user-service.url}")
-    private String userServiceUrl;
+    private final AuthServiceClient authServiceClient;
 
     private static final Logger logger = LoggerFactory.getLogger(AuthService.class);
 
-
     public UserCredential createCredential(RegisterRequestDTO dto) {
-
+        logger.debug("Attempting to create credential for email {}", dto.getEmail());
         if (credentialRepository.findByEmail(dto.getEmail()).isPresent()) {
-            logger.error("User with email {} already exists", dto.getEmail());
+            logger.error("Duplicate user detected with email {}", dto.getEmail());
             throw new DuplicateUserException("A user with this email is already registered");
         }
-
         UserCredential credential = dtoUserMapper.dtoToCredential(dto);
         credential.setPassword(passwordEncoder.encode(dto.getPassword()));
         credential.setRole("ROLE_USER");
         credential.setCreatedAt(LocalDateTime.now());
         credential.setEnabled(true);
-
-        logger.info("User with Email {} just registered", dto.getEmail());
+        logger.info("User credential created for email {}", dto.getEmail());
         return credentialRepository.save(credential);
-
     }
 
     public UserCredential createCredentialByAdmin(RegisterRequestDTO dto) {
-
+        logger.debug("Admin creating credential for email {}", dto.getEmail());
         if (credentialRepository.findByEmail(dto.getEmail()).isPresent()) {
-            logger.error("User with email {} already exists", dto.getEmail());
+            logger.error("Duplicate user detected with email {}", dto.getEmail());
             throw new DuplicateUserException("A user with this email is already registered");
         }
         UserCredential credential = dtoUserMapper.dtoToCredential(dto);
@@ -74,182 +63,120 @@ public class AuthService {
         credential.setRole("ROLE_ADMIN");
         credential.setCreatedAt(LocalDateTime.now());
         credential.setEnabled(true);
-        logger.info("ADMIN with Email {} just registered", dto.getEmail());
+        logger.info("Admin credential created for email {}", dto.getEmail());
         return credentialRepository.save(credential);
-
     }
 
-
-
     public UserProfileDTO createUserProfile(RegisterRequestDTO dto, long authUserId) {
-
+        logger.debug("Creating user profile for authUserId {}", authUserId);
         UserProfileDTO userProfileDto = dtoUserMapper.dtoToUserProfileDto(dto, authUserId);
-
-        ResponseEntity<UserProfileDTO> response = AuthServiceClient.createUserProfile(userProfileDto);
-
+        ResponseEntity<UserProfileDTO> response = authServiceClient.createUserProfile(userProfileDto);
         if (response.getStatusCode().is2xxSuccessful() && response.getBody() != null) {
+            logger.info("Profile created successfully for authUserId {}", authUserId);
             return response.getBody();
         } else {
-
-
+            logger.error("Failed to create profile for authUserId {}. Status: {}", authUserId, response.getStatusCode());
             throw new AuthServiceUnavailableException("Error creating profile: response status = " + response.getStatusCode());
         }
     }
 
-
-
-
-
     public List<ResponseDTO> getAllUsers() {
-        System.out.println("getAllUsers auth service before credentialRepository");
-
+        logger.debug("Fetching all users...");
         List<UserCredential> usersCredentialsList = credentialRepository.findAll();
-        System.out.println("getAllUsers auth service after credentialRepository");
-
-        ResponseEntity<List<UserProfileDTO>> response = AuthServiceClient.getAllUsersProfiles();
-
-
+        ResponseEntity<List<UserProfileDTO>> response = authServiceClient.getAllUsersProfiles();
         if (response.getStatusCode().is2xxSuccessful() && response.getBody() != null) {
-
+            logger.info("Fetched {} user profiles", response.getBody().size());
             Map<Long, UserProfileDTO> profileMap = response.getBody().stream()
                     .collect(Collectors.toMap(UserProfileDTO::getAuthUserId, Function.identity()));
-
             List<ResponseDTO> responseList = new ArrayList<>();
-
-
             for (UserCredential credential : usersCredentialsList) {
                 UserProfileDTO profile = profileMap.get(credential.getId());
                 if (profile != null) {
-                    ResponseDTO dto = mergeMapper.dtoProfileAndCredentialToResponseDto(profile, credential);
-                    responseList.add(dto);
+                    responseList.add(mergeMapper.dtoProfileAndCredentialToResponseDto(profile, credential));
                 }
             }
             return responseList;
         } else {
-
-
-            throw new AuthServiceUnavailableException(
-                    "Error receiving user profiles list: response status = " + response.getStatusCode());
-
+            logger.error("Failed to fetch user profiles. Status: {}", response.getStatusCode());
+            throw new AuthServiceUnavailableException("Error receiving user profiles list: response status = " + response.getStatusCode());
         }
     }
-
-
-
 
     public List<ResponseDTO> getUserByFamily(String family) {
-
-        ResponseEntity<List<UserProfileDTO>> response = AuthServiceClient.getUserByFamily(family);
-
-
+        logger.debug("Fetching users by family {}", family);
+        ResponseEntity<List<UserProfileDTO>> response = authServiceClient.getUserByFamily(family);
         if (response.getStatusCode().is2xxSuccessful() && response.getBody() != null) {
-
+            logger.info("Fetched {} profiles for family {}", response.getBody().size(), family);
             Map<Long, UserProfileDTO> profileMap = response.getBody().stream()
                     .collect(Collectors.toMap(UserProfileDTO::getAuthUserId, Function.identity()));
-
-
-            List<Long> authUserIdList = response.getBody().stream().map(UserProfileDTO::getAuthUserId)
-                    .collect(Collectors.toList());
-
-
+            List<Long> authUserIdList = response.getBody().stream().map(UserProfileDTO::getAuthUserId).toList();
             List<UserCredential> usersCredentialsList = credentialRepository.findByIdIn(authUserIdList);
-
-
             List<ResponseDTO> responseList = new ArrayList<>();
             for (UserCredential credential : usersCredentialsList) {
                 UserProfileDTO profile = profileMap.get(credential.getId());
                 if (profile != null) {
-                    ResponseDTO dto = mergeMapper.dtoProfileAndCredentialToResponseDto(profile, credential);
-                    responseList.add(dto);
+                    responseList.add(mergeMapper.dtoProfileAndCredentialToResponseDto(profile, credential));
                 }
             }
             return responseList;
         } else {
-
-            throw new AuthServiceUnavailableException(
-                    "Error receiving profiles: response status = " + response.getStatusCode());
+            logger.error("Failed to fetch profiles for family {}. Status: {}", family, response.getStatusCode());
+            throw new AuthServiceUnavailableException("Error receiving profiles: response status = " + response.getStatusCode());
         }
     }
-
-
 
     public ResponseDTO getUserByAuthUserId(long id) {
-
+        logger.debug("Fetching user by id {}", id);
         Optional<UserCredential> userCredential = credentialRepository.findById(id);
         if (userCredential.isEmpty()) {
-
+            logger.error("User with id {} not found in credentialRepository", id);
             throw new UserNotFoundException("User with id " + id + " was not found in credentialRepository.");
-
         }
-
-
-        ResponseEntity<UserProfileDTO> userProfileDto = AuthServiceClient.getUserByAuthUserId(id);
-
-
-
+        ResponseEntity<UserProfileDTO> userProfileDto = authServiceClient.getUserByAuthUserId(id);
         if (userProfileDto.getStatusCode().is2xxSuccessful() && userProfileDto.getBody() != null) {
-            ResponseDTO response = mergeMapper.dtoProfileAndCredentialToResponseDto(userProfileDto.getBody(),
-                    userCredential.get());
-            return response;
+            logger.info("Fetched profile for user id {}", id);
+            return mergeMapper.dtoProfileAndCredentialToResponseDto(userProfileDto.getBody(), userCredential.get());
         } else {
-
-            throw new AuthServiceUnavailableException(
-                    "Error receiving user profile: response status =" + userProfileDto.getStatusCode());
+            logger.error("Failed to fetch profile for user id {}. Status: {}", id, userProfileDto.getStatusCode());
+            throw new AuthServiceUnavailableException("Error receiving user profile: response status =" + userProfileDto.getStatusCode());
         }
     }
-
 
     @Transactional
     public void deleteUserById(Long id) {
-
+        logger.warn("Attempting to delete user with id {}", id);
         if (!credentialRepository.existsById(id)) {
-
+            logger.error("User with id {} not found in credentialRepository", id);
             throw new UserNotFoundException("User with id " + id + " was not found in credentialRepository.");
-
         }
-
-
-
-
-        ResponseEntity<Void> response = AuthServiceClient.deleteUser(id);
-
-
-
+        ResponseEntity<Void> response = authServiceClient.deleteUser(id);
         if (response.getStatusCode().is2xxSuccessful()) {
-
             credentialRepository.deleteById(id);
-
+            logger.info("User with id {} deleted successfully", id);
         } else {
-
-
-            throw new AuthServiceUnavailableException(
-                    "Error deleting user profile: response status = " + response.getStatusCode());
+            logger.error("Failed to delete user with id {}. Status: {}", id, response.getStatusCode());
+            throw new AuthServiceUnavailableException("Error deleting user profile: response status = " + response.getStatusCode());
         }
     }
-
 
     @Transactional
     public UserProfileDTO patchUser(RegisterRequestDTO dto, long authUserId) {
-
-
+        logger.debug("Patching user with id {}", authUserId);
         UserProfileDTO userProfileDto = dtoUserMapper.dtoToUserProfileDto(dto, authUserId);
-
-        ResponseEntity<UserProfileDTO> response = AuthServiceClient.patchUser(userProfileDto);
-
-
+        ResponseEntity<UserProfileDTO> response = authServiceClient.patchUser(userProfileDto);
         if (response.getStatusCode().is2xxSuccessful() && response.getBody() != null) {
             UserCredential credential = credentialRepository.findById(authUserId)
-                    .orElseThrow(() -> new UserNotFoundException("User with id " + authUserId + " was not found."));
+                    .orElseThrow(() -> {
+                        logger.error("User with id {} not found during patch", authUserId);
+                        return new UserNotFoundException("User with id " + authUserId + " was not found.");
+                    });
             credential.setPassword(passwordEncoder.encode(dto.getPassword()));
             credentialRepository.save(credential);
-
+            logger.info("User with id {} patched successfully", authUserId);
             return response.getBody();
         } else {
-
-
-            throw new AuthServiceUnavailableException(
-                    "Error updating user profile: response status = " + response.getStatusCode());
+            logger.error("Failed to patch user with id {}. Status: {}", authUserId, response.getStatusCode());
+            throw new AuthServiceUnavailableException("Error updating user profile: response status = " + response.getStatusCode());
         }
     }
-
 }

@@ -9,33 +9,19 @@ import io.swagger.v3.oas.models.info.Info;
 import io.swagger.v3.oas.models.security.SecurityRequirement;
 import io.swagger.v3.oas.models.security.SecurityScheme;
 
-
-
 @Configuration
 public class OpenApiConfig {
 
-    @Bean
-    public OpenAPI customOpenAPI() {
-        return new OpenAPI()
-            .info(new Info()
-                .title("Auth Service API")
-                .description("Endpoints for authentication and JWT token management")
-                .version("1.0"))
+	@Bean
+	public OpenAPI customOpenAPI() {
+		return new OpenAPI()
+				.info(new Info().title("Auth Service API")
+						.description("Endpoints for authentication and JWT token management").version("1.0"))
 
+				.addSecurityItem(new SecurityRequirement().addList("bearerAuth"))
 
-            
-            .addSecurityItem(new SecurityRequirement().addList("bearerAuth"))
+				.components(new Components().addSecuritySchemes("bearerAuth", new SecurityScheme().name("bearerAuth")
+						.type(SecurityScheme.Type.HTTP).scheme("bearer").bearerFormat("JWT")));
 
-
-            .components(new Components()
-                .addSecuritySchemes("bearerAuth",
-                    new SecurityScheme()
-                        .name("bearerAuth")
-                        .type(SecurityScheme.Type.HTTP)
-                        .scheme("bearer")
-                        .bearerFormat("JWT")));
-        
-
-        
-    }
+	}
 }

@@ -16,10 +16,10 @@ import lombok.AllArgsConstructor;
 public class CustomUserDetailsService implements UserDetailsService {
 
 
+
 	private final CredentialRepository credentialRepository ;
 	@Override
 	public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
-
 		UserCredential userCredential = credentialRepository.findByEmail(email).orElseThrow(()-> new UsernameNotFoundException("User not found"));
 			
 		return new CustomUserDetails(userCredential);

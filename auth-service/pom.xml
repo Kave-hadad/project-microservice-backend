@@ -87,11 +87,7 @@
     <version>0.11.5</version>
     <scope>runtime</scope>
 </dependency>
-<dependency>
-    <groupId>com.h2database</groupId>
-    <artifactId>h2</artifactId>
-    <scope>runtime</scope>
-</dependency>
+
 
 <dependency>
     <groupId>io.jsonwebtoken</groupId>
@@ -108,19 +104,49 @@
     <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
     <version>2.5.0</version>
 </dependency>
+<dependency>
+    <groupId>io.github.openfeign</groupId>
+    <artifactId>feign-okhttp</artifactId>
+</dependency>
+<dependency>
+  <groupId>org.postgresql</groupId>
+  <artifactId>postgresql</artifactId>
+   <scope>runtime</scope>
+</dependency>
 
 
-
+<dependency>
+    <groupId>com.h2database</groupId>
+    <artifactId>h2</artifactId>
+    <scope>test</scope>
+</dependency> 
 
 	</dependencies>
 
 	<build>
+	
+	
+	
 		<plugins>
+		<plugin>
+     <groupId>org.apache.maven.plugins</groupId>
+     <artifactId>maven-surefire-plugin</artifactId>
+      <configuration>
+             <systemPropertyVariables>
+           <spring.profiles.active>test</spring.profiles.active>
+       </systemPropertyVariables>
+           </configuration>
+    </plugin>
+
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			
+			
 		</plugins>
+		
 	</build>
+	
 
 </project>

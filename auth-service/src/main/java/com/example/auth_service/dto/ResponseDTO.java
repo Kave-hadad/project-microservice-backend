@@ -14,14 +14,14 @@ public class ResponseDTO {
 
 	private String name;
 	private String password;
-	private String email;
-	private String role;
-	private boolean enabled;
-	private LocalDateTime createdAt;
+	private String email; 
+	private String role; 
+	private boolean enabled;  
+	private LocalDateTime createdAt; 
 	private String family;
 	private String phone;
 	private String address;
 	private LocalDate birthDate;
-	private long userId;
+	private Long userId;
 
 }

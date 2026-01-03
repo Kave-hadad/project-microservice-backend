@@ -12,8 +12,6 @@ import com.example.user_service.entity.UserProfile;
 @Repository
 public interface UserRepository  extends JpaRepository<UserProfile, Long>{
 
-	
-
 	  Optional<UserProfile> findByAuthUserId(long authUserId);
 	  List<UserProfile> findByFamily(String family);
 	  void deleteByAuthUserId(long authUserId);

@@ -3,18 +3,16 @@ package com.example.user_service.controller;
 
 
 import java.util.List;
-
+// برای ساختن پروژه اول کلاس انتیتی رو میسازیم سپس ریپازستوری و سپس کلاس سرویس و متودهایش را مینویسیم و در پایان کنترلر
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -24,52 +22,42 @@ import com.example.user_service.dto.UserPatchDTO;
 import com.example.user_service.dto.UserProfileDTO;
 import com.example.user_service.service.UserService;
 
+import io.swagger.v3.oas.annotations.Operation;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 
-
-
 @RestController
-
 @RequestMapping("/api/users")
-
 @AllArgsConstructor
 public class UserController {
     private static final Logger logger = LoggerFactory.getLogger(UserController.class);	
-//	@GetMapping
-//   public List<User> getAllUsers()
-//	{
-//		System.out.println("UserContoroller");
-//	return Arrays.asList( 
-//			new User(1L, "Alice", "alice@example.com"),
-//            new User(2L, "Bob", "bob@example.com"),
-//            new User(3L, "Charlie", "charlie@example.com")
-//            );			
-//	}
-	
-	
 
 	
 
 	private final UserService userService;
 
 
+	
+	@Operation( summary = "Get all user profiles", description = "Fetches a list of all user profiles available in the system." )
 	@GetMapping
-
 	public ResponseEntity<List<UserProfileDTO>> getAllUsersProfiles(){
+		 logger.info("Fetching  AllUsersProfiles ");
 		return ResponseEntity.ok(userService.getAllUsers());		
 	}
 	
 
+	
+	   @Operation( summary = "Get user by ID",description = "Fetches a single user profile by its unique AuthUserId." )
 	 @GetMapping("/{id}")
 	 public ResponseEntity<UserProfileDTO> getUserByAuthUserId(@PathVariable Long id) {
-
 		    logger.info("Fetching user by AuthUserId: {}", id);
 		return ResponseEntity.ok(userService.getUserByAuthUserId(id));			 
 	 }
 	 
 	
 
+	   
+	   @Operation(summary = "Search users by family name",description = "Fetches user profiles filtered by family name.")
 	 @GetMapping("/search")
 	 public ResponseEntity<List<UserProfileDTO>> getUserByFamily(@RequestParam String family) {
 	
@@ -78,7 +66,7 @@ public class UserController {
 	 }
 	 
 	 
-
+	   @Operation( summary = "Create new user profile",description = "Creates a new user profile with provided information.")
 
 	 @PostMapping
 	 public ResponseEntity<UserProfileDTO> createUserProfile(@Valid @RequestBody UserProfileDTO userProfileDto)
@@ -90,18 +78,9 @@ public class UserController {
 		return ResponseEntity.ok(dtoReturn);
 	
    	}
-//	 @PreAuthorize("hasAnyRole('USER','ADMIN')")
-//	 @PutMapping("/{id}")
-//	 public ResponseEntity<String> updateUserProfile(@RequestBody UserProfileDTO user)
-//	// old  public ResponseEntity<String> updateUserProfile(@PathVariable Long authUserId ,@RequestBody UserProfileDTO user)
-//	 {
-//	  userService.updateUserProfile(user);	
-//	  logger.info("Updating user by AuthUserId: {}",user.getAuthUserId());
-//      return ResponseEntity.ok("usersProfile updated  successfully "); 
-//	 }
-//	 
-	 
 
+	   @Operation(summary = "Delete user profile by ID",description = "Deletes a user profile by its unique AuthUserId.")
+	   
 	 @DeleteMapping("/{id}")
 	public void deleteUser(@PathVariable Long id)
 	 {
@@ -109,16 +88,8 @@ public class UserController {
 		userService.deleteUserProfile(id);
 	 }
 
-	 //////////// have to improve 
-
-//	 @GetMapping("/search")
-//	  public ResponseEntity<UserDTO> searchUserByName(@RequestParam String name) 
-//	 {	 
-//		   logger.debug("Searching user by name: {}", name);
-//	        return  ResponseEntity.ok( userService.getUserByName(name));
-//	    }
-	 /////////////////////////////////////////////////////////
-	 ///
+	   
+	   @Operation(summary = "Patch user profile",description = "Updates partial information of a user profile. Accepts UserPatchDTO with fields to update.")
 
 	 @PatchMapping
 	 public ResponseEntity<UserProfileDTO> patchUser(@Valid @RequestBody UserPatchDTO updates) {
