@@ -1,0 +1,64 @@
+services:
+  auth-service:
+    build: ./auth-service
+    ports:
+      - "8081:8081"
+    networks:
+      - mynet
+    depends_on:
+      dbauth:
+        condition: service_healthy
+      user-service:
+        condition: service_started
+
+  user-service:
+    build: ./user-service
+    networks:
+      - mynet
+    depends_on:
+      dbuser:
+        condition: service_healthy
+
+  dbuser:
+    image: postgres:14
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=123456
+      - POSTGRES_DB=userdb
+    ports:
+      - "5432:5432"
+    volumes:
+      - dbuser_data:/var/lib/postgresql/data
+    networks:
+      - mynet
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin -d userdb"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  dbauth:
+    image: postgres:14
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=123456
+      - POSTGRES_DB=authdb
+    ports:
+      - "5433:5432"
+    volumes:
+      - dbauth_data:/var/lib/postgresql/data
+    networks:
+      - mynet
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin -d authdb"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  dbuser_data:
+  dbauth_data:
+
+networks:
+  mynet:
+    driver: bridge
