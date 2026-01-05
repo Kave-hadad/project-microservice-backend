@@ -112,7 +112,7 @@ public class AuthController {
 
     
     
-    @Operation(summary = "Patch user profile",description = "Updates partial information of a user profile and password. Accessible by ADMIN or the user themselves.")
+    @Operation(summary = "Patch user or Admin profile",description = "Updates partial information of a user profile and password. Accessible by ADMIN or the user themselves.")
     @PreAuthorize("hasRole('ADMIN') or #dto.email == authentication.name")
     @PatchMapping("/users/{id}")
     public ResponseEntity<UserProfileDTO> patchUser(@PathVariable("id") long authUserId,
