@@ -65,7 +65,7 @@ This architecture demonstrates **REST APIs**, **JWT-based security**, and **serv
 
 ## 📖 API Documentation
 Swagger UI is available at: 
-- **Gateway (Auth Service)** → `http://localhost:8081/swagger-ui/index.html#`
+- **Gateway (Auth Service)** → (http://localhost:8081/swagger-ui/index.html#)
  
 
 ---
