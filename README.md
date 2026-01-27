@@ -42,7 +42,7 @@ This architecture demonstrates **REST APIs**, **JWT-based security**, and **serv
 - **Logback/SLF4J** for logging  
   
 ## 📂 Project Structure
-   
+```bash   
 ├── auth-service
 │   ├── controller
 │   ├── service
