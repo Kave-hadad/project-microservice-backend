@@ -40,10 +40,9 @@ This architecture demonstrates **REST APIs**, **JWT-based security**, and **serv
 - **Docker & Docker Compose** for containerization  
 - **JUnit & Mockito** for Unit Testing  
 - **Logback/SLF4J** for logging  
-
-
+  
 ## 📂 Project Structure
-
+   
 ├── auth-service
 │   ├── controller
 │   ├── service
@@ -59,11 +58,9 @@ This architecture demonstrates **REST APIs**, **JWT-based security**, and **serv
 │   ├── repository
 │   ├── Mapper
 │   └── dto
-│ 
 │
 └── docker-compose.yml
-
-
+   
 ---
 
 ## 📖 API Documentation
@@ -85,5 +82,5 @@ bash
 docker-compose up
 Services will be available at:
 gateway:
-Auth Service → http://localhost:8081/swagger-ui/index.html#
+Auth Service → (http://localhost:8081/swagger-ui/index.html#)
 
