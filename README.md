@@ -61,7 +61,7 @@ This architecture demonstrates **REST APIs**, **JWT-based security**, and **serv
 │
 └── docker-compose.yml
    
----
+```
 
 ## 📖 API Documentation
 Swagger UI is available at: 
